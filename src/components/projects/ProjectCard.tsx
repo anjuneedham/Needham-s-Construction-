@@ -25,7 +25,7 @@ export function ProjectCard({
   return (
     <article
       className={cn(
-        "reveal group flex flex-col overflow-hidden bg-white ring-1 ring-concrete-300 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg",
+        "group flex flex-col overflow-hidden bg-white ring-1 ring-concrete-300 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg",
         className,
       )}
     >

@@ -77,7 +77,7 @@ function Lightbox({
 
   /**
    * Portalled to <body> deliberately. Cards that open the viewer carry a
-   * transform (hover lift, scroll reveal), and a transformed ancestor becomes
+   * transform (hover lift), and a transformed ancestor becomes
    * the containing block for position:fixed — which would trap this inside
    * the card instead of covering the screen.
    */

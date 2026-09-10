@@ -115,7 +115,7 @@ export default function AboutPage() {
           id="about-services-heading"
           eyebrow="What we do"
           title="The work we take on"
-          description="Five services, handled in-house. A job that touches more than one trade stays with one team."
+          description="Four services, handled in-house. A job that touches more than one trade stays with one team."
         />
         <ServicesGrid services={services} className="mt-14" />
       </Section>

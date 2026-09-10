@@ -14,7 +14,7 @@ export function ServiceCard({ service }: { service: Service }) {
   const cover = service.images[0];
 
   return (
-    <article className="reveal group flex flex-col bg-white ring-1 ring-concrete-300 transition-all duration-200 hover:-translate-y-1 hover:shadow-xl">
+    <article className="group flex flex-col bg-white ring-1 ring-concrete-300 transition-all duration-200 hover:-translate-y-1 hover:shadow-xl">
       <div className="relative">
         {cover ? (
           <SmartImage

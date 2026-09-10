@@ -99,7 +99,7 @@ export function ContactChannels() {
                       {...(external
                         ? { target: "_blank", rel: "noopener noreferrer" }
                         : {})}
-                      className="mt-1 block font-display text-lg font-bold break-words text-iron-900 transition-colors hover:text-amber-700"
+                      className="mt-1 block font-display text-lg font-bold break-all text-iron-900 transition-colors hover:text-amber-700"
                     >
                       {value}
                     </a>

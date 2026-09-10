@@ -23,7 +23,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="Our services"
         title="Construction and home services across Jamaica"
-        description="Five trades under one roof. Take on a single job, or hand over a whole renovation and let us coordinate it."
+        description="Four trades under one roof. Take on a single job, or hand over a whole renovation and let us coordinate it."
         crumbs={[
           { name: "Home", href: "/" },
           { name: "Services", href: "/services" },

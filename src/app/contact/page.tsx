@@ -38,7 +38,7 @@ export default function ContactPage() {
       <Section tone="light" id="quote" labelledBy="quote-heading">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-14">
           {/* ------------------------------------------------------ form */}
-          <div className="lg:col-span-7">
+          <div className="min-w-0 lg:col-span-7">
             <SectionHeading
               id="quote-heading"
               eyebrow="Request a quote"
@@ -55,7 +55,7 @@ export default function ContactPage() {
           {/* -------------------------------------------------- channels */}
           <aside
             aria-labelledby="channels-heading"
-            className="lg:col-span-5"
+            className="min-w-0 lg:col-span-5"
           >
             <h2
               id="channels-heading"
@@ -77,7 +77,7 @@ export default function ContactPage() {
       {/* ---------------------------------------------------------- faq */}
       <Section tone="muted" labelledBy="faq-heading">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-14">
-          <div className="lg:col-span-4">
+          <div className="min-w-0 lg:col-span-4">
             <SectionHeading
               id="faq-heading"
               eyebrow="Common questions"
@@ -85,7 +85,7 @@ export default function ContactPage() {
               description="If your question isn't here, ask us directly — we'll give you a straight answer."
             />
           </div>
-          <div className="lg:col-span-8">
+          <div className="min-w-0 lg:col-span-8">
             <Faq />
           </div>
         </div>

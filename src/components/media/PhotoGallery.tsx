@@ -41,7 +41,7 @@ export function PhotoGallery({
         )}
       >
         {images.map((image, i) => (
-          <li key={image.src} className="reveal">
+          <li key={image.src}>
             <button
               type="button"
               onClick={() => open(i)}

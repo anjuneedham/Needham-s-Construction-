@@ -1,5 +1,5 @@
 /**
- * SERVICES — the five service pages are generated from this array.
+ * SERVICES — the service pages are generated from this array.
  *
  * TO ADD A NEW SERVICE: copy any block below, change the `slug`, `name` and
  * copy, and it appears in the nav dropdown, the home page grid, the services
@@ -222,7 +222,20 @@ export const services: Service[] = [
           "We clear up, show you what was done and how it works, and confirm you're happy with it.",
       },
     ],
-    images: [],
+    images: [
+      {
+        src: "/media/projects/bathroom-marble-shower.jpg",
+        alt: "Bathroom shower fittings and drainage installed behind marble-look tiling",
+        width: 1200,
+        height: 1600,
+      },
+      {
+        src: "/media/projects/bathroom-gray-shower.jpg",
+        alt: "Renovated bathroom with new toilet, vanity and shower fittings connected",
+        width: 899,
+        height: 1599,
+      },
+    ],
     videos: [],
     mediaSlots: [
       { label: "Bathroom plumbing installation", ratio: "4/3" },

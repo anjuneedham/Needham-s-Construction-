@@ -14,7 +14,7 @@ export function WhyChooseUs() {
 
       <ul className="mt-14 grid gap-px overflow-hidden bg-concrete-300 sm:grid-cols-2 lg:grid-cols-4">
         {company.values.map((value, index) => (
-          <li key={value.title} className="reveal bg-concrete-50 p-7 lg:p-8">
+          <li key={value.title} className="bg-concrete-50 p-7 lg:p-8">
             <span
               aria-hidden
               className="font-display text-sm font-bold tracking-[0.2em] text-amber-600"
