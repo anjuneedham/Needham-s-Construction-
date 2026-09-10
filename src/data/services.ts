@@ -86,7 +86,56 @@ export const services: Service[] = [
           "Tiles are cleaned down, the area is cleared, and we walk the finished work with you before we leave.",
       },
     ],
-    images: [],
+    images: [
+      {
+        src: "/media/projects/pool-wide-view.jpg",
+        alt: "Pool and attached round spa finished with mosaic tile and travertine coping",
+        width: 1600,
+        height: 1200,
+      },
+      {
+        src: "/media/projects/bathroom-marble-shower.jpg",
+        alt: "Marble-look tiled shower enclosure with frameless sliding glass door",
+        width: 1200,
+        height: 1600,
+      },
+      {
+        src: "/media/projects/pool-spa-overhead.jpg",
+        alt: "Overhead view of a round spa with mosaic tile walls and travertine coping",
+        width: 1200,
+        height: 1600,
+      },
+      {
+        src: "/media/projects/paving-curved-steps.jpg",
+        alt: "Curved entrance steps finished in multi-tone stone-effect tile",
+        width: 1600,
+        height: 1200,
+      },
+      {
+        src: "/media/projects/pool-steps-tile-detail.jpg",
+        alt: "Mosaic tile pool steps with a stainless handrail",
+        width: 1600,
+        height: 1200,
+      },
+      {
+        src: "/media/projects/pool-kidney-brick.jpg",
+        alt: "Kidney-shaped pool with dark mosaic waterline and red brick coping",
+        width: 1200,
+        height: 1600,
+      },
+      {
+        src: "/media/projects/pool-custom-mosaic-lettering.jpg",
+        alt: "Custom mosaic tile lettering set into a poolside concrete deck",
+        width: 1200,
+        height: 1600,
+      },
+      {
+        src: "/media/projects/bathroom-gray-shower.jpg",
+        alt: "Renovated bathroom with a tiled shower enclosure and new vanity",
+        width: 899,
+        height: 1599,
+      },
+    ],
     videos: [],
     mediaSlots: [
       { label: "Completed floor tiling", ratio: "4/3" },
@@ -260,7 +309,26 @@ export const services: Service[] = [
           "Surfaces are finished as agreed, waste is cleared and the site is left tidy.",
       },
     ],
-    images: [],
+    images: [
+      {
+        src: "/media/projects/masonry-facade-construction.jpg",
+        alt: "Stone-veneer facade partway through installation on a gable-end addition",
+        width: 1600,
+        height: 1200,
+      },
+      {
+        src: "/media/projects/masonry-column-detail.jpg",
+        alt: "Stone-veneer support column finished with clean mitred corners",
+        width: 1200,
+        height: 1600,
+      },
+      {
+        src: "/media/projects/masonry-facade-detail.jpg",
+        alt: "Finished stone-veneer facade with even coursing under the roofline",
+        width: 1600,
+        height: 1200,
+      },
+    ],
     videos: [],
     mediaSlots: [
       { label: "Block work in progress", ratio: "4/3" },
@@ -349,7 +417,20 @@ export const services: Service[] = [
           "We complete the snagging, clear the site and walk the finished work with you.",
       },
     ],
-    images: [],
+    images: [
+      {
+        src: "/media/projects/pool-construction-shell.jpg",
+        alt: "Poured concrete pool structure under construction before finishing",
+        width: 1599,
+        height: 899,
+      },
+      {
+        src: "/media/projects/pool-tiling-progress.jpg",
+        alt: "Mosaic tiling being installed on a pool mid-build",
+        width: 1280,
+        height: 720,
+      },
+    ],
     videos: [],
     mediaSlots: [
       { label: "Renovation in progress", ratio: "4/3" },

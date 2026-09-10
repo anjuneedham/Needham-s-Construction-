@@ -10,6 +10,7 @@ import { ProjectsShowcase } from "@/components/sections/ProjectsShowcase";
 import { ContactCTA } from "@/components/sections/ContactCTA";
 import { VideoSection } from "@/components/media/VideoSection";
 import { MediaFrame } from "@/components/media/MediaFrame";
+import { PhotoGallery } from "@/components/media/PhotoGallery";
 import { SmartImage } from "@/components/media/SmartImage";
 import { CheckIcon } from "@/components/ui/Icons";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -190,17 +191,7 @@ export default async function ServicePage({ params }: PageProps) {
             eyebrow="Photography"
             title={`More ${service.name.toLowerCase()} work`}
           />
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {galleryImages.map((image) => (
-              <SmartImage
-                key={image.src}
-                image={image}
-                fallbackLabel={service.name}
-                ratio="4/3"
-                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-              />
-            ))}
-          </div>
+          <PhotoGallery images={galleryImages} ratio="4/3" className="mt-12" />
         </Section>
       ) : null}
 

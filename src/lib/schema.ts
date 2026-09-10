@@ -9,6 +9,7 @@
 
 import { company } from "@/data/company";
 import { contact } from "@/data/contact";
+import { faqs } from "@/data/faq";
 import { services } from "@/data/services";
 import { socials } from "@/data/social";
 import { siteUrl } from "@/data/site";
@@ -154,6 +155,21 @@ export function breadcrumbSchema(
       position: index + 1,
       name: crumb.name,
       item: `${siteUrl}${crumb.path === "/" ? "" : crumb.path}`,
+    })),
+  };
+}
+
+/** Emits nothing when there are no questions, so the markup never lies. */
+export function faqSchema(): Json | null {
+  if (faqs.length === 0) return null;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
     })),
   };
 }

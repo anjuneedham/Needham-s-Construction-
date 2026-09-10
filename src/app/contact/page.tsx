@@ -6,11 +6,12 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ContactChannels } from "@/components/contact/ContactChannels";
 import { QuoteForm } from "@/components/contact/QuoteForm";
+import { Faq } from "@/components/sections/Faq";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { contact } from "@/data/contact";
 import { company } from "@/data/company";
 import { pageMetadata } from "@/lib/seo";
-import { breadcrumbSchema } from "@/lib/schema";
+import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = pageMetadata({
   title: "Contact & Request a Quote",
@@ -20,6 +21,8 @@ export const metadata: Metadata = pageMetadata({
 });
 
 export default function ContactPage() {
+  const faqData = faqSchema();
+
   return (
     <>
       <PageHero
@@ -71,6 +74,23 @@ export default function ContactPage() {
         </div>
       </Section>
 
+      {/* ---------------------------------------------------------- faq */}
+      <Section tone="muted" labelledBy="faq-heading">
+        <div className="grid gap-12 lg:grid-cols-12 lg:gap-14">
+          <div className="lg:col-span-4">
+            <SectionHeading
+              id="faq-heading"
+              eyebrow="Common questions"
+              title="Before you get in touch"
+              description="If your question isn't here, ask us directly — we'll give you a straight answer."
+            />
+          </div>
+          <div className="lg:col-span-8">
+            <Faq />
+          </div>
+        </div>
+      </Section>
+
       {/* ---------------------------------------------------------- map */}
       {contact.mapEmbedUrl ? (
         <Section tone="muted" labelledBy="map-heading">
@@ -90,6 +110,8 @@ export default function ContactPage() {
           </div>
         </Section>
       ) : null}
+
+      {faqData ? <JsonLd data={faqData} /> : null}
 
       <JsonLd
         data={breadcrumbSchema([

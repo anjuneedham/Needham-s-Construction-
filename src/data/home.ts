@@ -15,7 +15,12 @@ import type { ImageAsset, VideoAsset } from "@/types/content";
  *     alt: "Newly tiled open-plan living area completed by Needham's Construction",
  *     width: 1600, height: 1200 }
  */
-export const heroImage: ImageAsset | null = null;
+export const heroImage: ImageAsset | null = {
+  src: "/media/projects/pool-luxury-estate.jpg",
+  alt: "Completed pool and round spa with mosaic tile detailing, built by Needham's Construction",
+  width: 1600,
+  height: 1200,
+};
 
 /**
  * A hero video. Takes priority over `heroImage`.
@@ -26,7 +31,12 @@ export const heroImage: ImageAsset | null = null;
 export const heroVideo: VideoAsset | null = null;
 
 /** Photograph for the About section on the home page and the About page. */
-export const aboutImage: ImageAsset | null = null;
+export const aboutImage: ImageAsset | null = {
+  src: "/media/projects/masonry-facade-detail.jpg",
+  alt: "Stone-veneer facade with even coursing and clean joints, installed by Needham's Construction",
+  width: 1600,
+  height: 1200,
+};
 
 /**
  * Videos for the "See Our Work" section. Add up to three for a tidy row.

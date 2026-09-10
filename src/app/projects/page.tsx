@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 import { PageHero } from "@/components/sections/PageHero";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { ProjectGrid } from "@/components/projects/ProjectGrid";
+import { FilterableProjects } from "@/components/projects/FilterableProjects";
 import { ContactCTA } from "@/components/sections/ContactCTA";
 import { VideoSection } from "@/components/media/VideoSection";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -41,43 +40,30 @@ export default function ProjectsPage() {
       />
 
       <Section tone="light" labelledBy="projects-heading">
-        <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-          <SectionHeading
-            id="projects-heading"
-            eyebrow={
-              allProjects.length > 0
-                ? `${allProjects.length} project${allProjects.length > 1 ? "s" : ""}`
-                : "Portfolio"
-            }
-            title={
-              allProjects.length > 0 ? "Completed work" : "Building the portfolio"
-            }
-            description={
-              allProjects.length > 0
-                ? "Browse work by service, or get in touch about something similar."
-                : "We're photographing and filming jobs as they're completed. In the meantime, each service page explains exactly what that work involves and how we approach it."
-            }
-          />
-
-          <nav aria-label="Browse by service" className="shrink-0">
-            <ul className="flex flex-wrap gap-2">
-              {services.map((service) => (
-                <li key={service.slug}>
-                  <Link
-                    href={`/services/${service.slug}#gallery`}
-                    className="inline-flex items-center rounded-sm border border-concrete-300 bg-white px-3.5 py-2 text-sm font-medium text-iron-700 transition-colors hover:border-iron-900 hover:text-iron-900"
-                  >
-                    {service.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
+        <SectionHeading
+          id="projects-heading"
+          eyebrow={
+            allProjects.length > 0
+              ? `${allProjects.length} project${allProjects.length > 1 ? "s" : ""}`
+              : "Portfolio"
+          }
+          title={
+            allProjects.length > 0 ? "Completed work" : "Building the portfolio"
+          }
+          description={
+            allProjects.length > 0
+              ? "Filter by service, or tap any project to open the photos full screen."
+              : "We're photographing and filming jobs as they're completed. In the meantime, each service page explains exactly what that work involves and how we approach it."
+          }
+        />
 
         <div className="mt-12">
-          <ProjectGrid
+          <FilterableProjects
             projects={allProjects}
+            filters={services.map((service) => ({
+              slug: service.slug,
+              label: service.name,
+            }))}
             emptyHeading="Our latest projects will be showcased here"
             emptyMessage="Each completed job is photographed and, where it makes sense, filmed. Those projects will appear here with the location, the service involved and before-and-after images."
             emptyLabels={[
