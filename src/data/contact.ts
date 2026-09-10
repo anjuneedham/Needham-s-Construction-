@@ -13,14 +13,14 @@ import type { BusinessHours } from "@/types/content";
 export const contact = {
   phone: {
     /** How the number is shown on screen, e.g. "(876) 555 0123". */
-    display: "(876) 863-0312",
+    display: "(876) 860-7659",
     /** Digits only, with country code, for tel: links, e.g. "18765550123". */
-    e164: "18768630312",
+    e164: "18768607659",
   },
 
   whatsapp: {
     /** Digits only, with country code, e.g. "18765550123". Often the same number. */
-    number: "18768630312",
+    number: "18765630312",
     /** Pre-filled first message when someone taps "WhatsApp Us". */
     defaultMessage:
       "Hi Needham's Construction, I'd like to ask about a project.",
