@@ -49,7 +49,138 @@
 
 import type { Project } from "@/types/content";
 
-export const projects: Project[] = [];
+export const projects: Project[] = [
+  {
+    slug: "pool-surround-tiling",
+    title: "Pool surround tiling and coping",
+    category: "tiling",
+    location: "Kingston area",
+    description:
+      "Complete pool surrounds with blue mosaic tile borders, concrete paving, and decorative tiled coping. Careful level-setting and grout finishing for water safety.",
+    images: [
+      {
+        src: "/media/projects/pool-1-after.jpg",
+        alt: "Completed pool with blue mosaic tile border and light concrete surround",
+        width: 1200,
+        height: 900,
+      },
+      {
+        src: "/media/projects/pool-2-spa.jpg",
+        alt: "Luxury spa pool with curved tiling and white marble coping",
+        width: 1200,
+        height: 900,
+      },
+      {
+        src: "/media/projects/pool-3-steps.jpg",
+        alt: "Pool steps with geometric blue tile pattern and slip-resistant finish",
+        width: 1200,
+        height: 900,
+      },
+    ],
+    videos: [],
+    beforeAfter: [],
+    date: "2025-12-15",
+    featured: true,
+  },
+  {
+    slug: "bathroom-shower-enclosure",
+    title: "Bathroom renovation with marble tiling",
+    category: "tiling",
+    location: "Kingston",
+    description:
+      "Full bathroom renovation including marble wall tiling, new shower enclosure with glass partition, level floor tiling, and modern fixtures.",
+    images: [
+      {
+        src: "/media/projects/bathroom-marble-shower.jpg",
+        alt: "Modern bathroom with marble-look wall tiles and frameless glass shower enclosure",
+        width: 1200,
+        height: 1000,
+      },
+      {
+        src: "/media/projects/bathroom-floor.jpg",
+        alt: "Light-colored tile flooring with even grout lines and proper fall for drainage",
+        width: 1200,
+        height: 900,
+      },
+    ],
+    videos: [],
+    beforeAfter: [],
+    date: "2025-11-20",
+    featured: true,
+  },
+  {
+    slug: "decorative-paving",
+    title: "Decorative slate and stone paving",
+    category: "tiling",
+    location: "St. Andrew",
+    description:
+      "Multi-level patio with natural slate paving, geometric stone inlays, and curved steps. Each stone set level with tight, clean joints.",
+    images: [
+      {
+        src: "/media/projects/paving-stairs.jpg",
+        alt: "Multi-colored slate paving in geometric pattern with curved corner steps",
+        width: 1200,
+        height: 900,
+      },
+    ],
+    videos: [],
+    beforeAfter: [],
+    date: "2025-10-18",
+    featured: false,
+  },
+  {
+    slug: "masonry-brick-facade",
+    title: "Brick masonry facade and renovation",
+    category: "masonry",
+    location: "Kingston",
+    description:
+      "Complete brick facade with stacked-bond pattern, proper mortar joints, and professionally finished edges. Designed for durability and clean lines.",
+    images: [
+      {
+        src: "/media/projects/masonry-facade.jpg",
+        alt: "Modern brick facade with horizontal coursing and clean mortar lines",
+        width: 1200,
+        height: 900,
+      },
+      {
+        src: "/media/projects/masonry-detail.jpg",
+        alt: "Detailed view of brick bond pattern and mortar finish",
+        width: 1200,
+        height: 900,
+      },
+    ],
+    videos: [],
+    beforeAfter: [],
+    date: "2025-09-10",
+    featured: false,
+  },
+  {
+    slug: "construction-expansion",
+    title: "Home expansion with masonry and electrical",
+    category: "general-construction",
+    location: "St. Catherine",
+    description:
+      "Major home expansion including new brick rooms, structural support columns, concrete foundation, rough electrical work, and preparation for finishes.",
+    images: [
+      {
+        src: "/media/projects/construction-frame.jpg",
+        alt: "Brick-built room addition with concrete pillar supports and roof framing",
+        width: 1200,
+        height: 900,
+      },
+      {
+        src: "/media/projects/construction-columns.jpg",
+        alt: "Detailed view of concrete columns and brick masonry supporting structure",
+        width: 1200,
+        height: 900,
+      },
+    ],
+    videos: [],
+    beforeAfter: [],
+    date: "2025-08-05",
+    featured: false,
+  },
+];
 
 /** Projects shown on the home page, newest first. */
 export function getFeaturedProjects(limit = 3): Project[] {

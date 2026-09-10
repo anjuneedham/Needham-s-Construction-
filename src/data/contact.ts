@@ -13,28 +13,32 @@ import type { BusinessHours } from "@/types/content";
 export const contact = {
   phone: {
     /** How the number is shown on screen, e.g. "(876) 555 0123". */
-    display: "",
+    display: "(876) 863-0312",
     /** Digits only, with country code, for tel: links, e.g. "18765550123". */
-    e164: "",
+    e164: "18768630312",
   },
 
   whatsapp: {
     /** Digits only, with country code, e.g. "18765550123". Often the same number. */
-    number: "",
+    number: "18768630312",
     /** Pre-filled first message when someone taps "WhatsApp Us". */
     defaultMessage:
       "Hi Needham's Construction, I'd like to ask about a project.",
   },
 
   /** e.g. "info@needhamsconstruction.com" */
-  email: "",
+  email: "support@needhamsconstruction.online",
 
   /**
    * Where you work. Leave the array empty and the site says
    * "Serving clients across Jamaica".
    * Example: ["Kingston", "St. Andrew", "St. Catherine"]
    */
-  serviceAreas: [] as string[],
+  serviceAreas: [
+    "Kingston",
+    "St. Andrew",
+    "St. Catherine",
+  ] as string[],
 
   /**
    * OPTIONAL — only fill in if you want a public address listed.
