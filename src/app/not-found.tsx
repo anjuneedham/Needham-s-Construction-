@@ -36,7 +36,7 @@ export default function NotFound() {
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <ButtonLink href="/" size="lg" variant="primary">
               Back to home
-              <ArrowRightIcon className="h-5 w-5" />
+              <ArrowRightIcon className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
             </ButtonLink>
             <ButtonLink href="/contact#quote" size="lg" variant="onDark">
               Request a Quote

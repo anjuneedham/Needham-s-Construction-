@@ -19,15 +19,15 @@ export const company = {
 
   /** One-sentence description used in the footer, meta tags and social profiles. */
   positioning:
-    "Professional construction and home-improvement services across Jamaica — tiling, plumbing, masonry, electrical and general construction.",
+    "Professional construction and home-improvement services across Jamaica — tiling, plumbing, masonry and general construction.",
 
   /** Short description for the footer and cards. */
   blurb:
-    "A Jamaican construction and home-services company handling tiling, plumbing, masonry, electrical and general construction work.",
+    "A Jamaican construction and home-services company handling tiling, plumbing, masonry and general construction work.",
 
   /** About page / home about section. One string per paragraph. */
   about: [
-    "Needham's Construction is a Jamaican construction and home-services company. We take on tiling, plumbing, masonry, electrical and general construction work for homeowners, businesses and property owners across the island.",
+    "Needham's Construction is a Jamaican construction and home-services company. We take on tiling, plumbing, masonry and general construction work for homeowners, businesses and property owners across the island.",
     "Our approach is straightforward. We look at the job properly before we quote, explain clearly what the work involves, and agree the scope before anything starts. On site we work carefully, keep the area clean, and finish what we start.",
     "Whether it's a single bathroom re-tile, new plumbing for a kitchen, block work on an extension, or a full renovation managed end to end, the standard is the same: solid preparation, careful workmanship, and a finish we're happy to put our name on.",
   ],

@@ -17,7 +17,7 @@ import type { VideoAsset } from "@/types/content";
 export const metadata: Metadata = pageMetadata({
   title: "Our Projects",
   description:
-    "Completed construction, tiling, plumbing, masonry and electrical projects by Needham's Construction in Jamaica. Photographs and video from real jobs.",
+    "Completed construction, tiling, plumbing and masonry projects by Needham's Construction in Jamaica. Photographs and video from real jobs.",
   path: "/projects",
 });
 

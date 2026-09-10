@@ -13,7 +13,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = pageMetadata({
   title: "Construction Services",
   description:
-    "Tiling, plumbing, masonry, electrical and general construction services across Jamaica. See what Needham's Construction can take on and request a quote.",
+    "Tiling, plumbing, masonry and general construction services across Jamaica. See what Needham's Construction can take on and request a quote.",
   path: "/services",
 });
 

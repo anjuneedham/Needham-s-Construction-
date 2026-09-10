@@ -71,7 +71,7 @@ export function AboutIntro({
           {showCta ? (
             <ButtonLink href="/about" variant="outline" className="mt-9">
               More about Needham&rsquo;s
-              <ArrowRightIcon className="h-4 w-4" />
+              <ArrowRightIcon className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
             </ButtonLink>
           ) : null}
         </div>

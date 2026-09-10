@@ -30,7 +30,7 @@ const sizeClasses: Record<ButtonSize, string> = {
 };
 
 const baseClasses =
-  "inline-flex items-center justify-center gap-2.5 rounded-sm font-semibold tracking-tight transition-colors duration-150 disabled:pointer-events-none disabled:opacity-50";
+  "group inline-flex items-center justify-center gap-2.5 rounded-sm font-semibold tracking-tight transition-all duration-150 disabled:pointer-events-none disabled:opacity-50 active:scale-[0.98]";
 
 function classesFor(variant: ButtonVariant, size: ButtonSize, className?: string) {
   return cn(baseClasses, variantClasses[variant], sizeClasses[size], className);

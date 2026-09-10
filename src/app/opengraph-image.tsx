@@ -76,7 +76,7 @@ export default function OpengraphImage() {
             Reliable Workmanship.
           </div>
           <div style={{ color: "#bdb8ac", fontSize: 26, marginTop: 28 }}>
-            Tiling · Plumbing · Masonry · Electrical · General Construction
+            Tiling · Plumbing · Masonry · General Construction
           </div>
         </div>
 

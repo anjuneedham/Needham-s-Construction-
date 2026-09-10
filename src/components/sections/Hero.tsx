@@ -45,7 +45,7 @@ export function Hero({
         className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-amber-500/50 to-transparent"
       />
 
-      <Container size="wide" className="relative py-16 sm:py-20 lg:py-28">
+      <Container size="wide" className="relative py-20 sm:py-24 lg:py-32">
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-14">
           {/* ------------------------------------------------------ copy */}
           <div className="lg:col-span-6">
@@ -59,14 +59,14 @@ export function Hero({
             <p className="mt-6 max-w-xl text-base leading-relaxed text-concrete-300 sm:text-lg">
               {company.name} provides professional construction and
               home-improvement services across Jamaica — tiling, plumbing,
-              masonry, electrical and general construction, handled by one team
+              masonry and general construction, handled by one team
               from first quote to final clean-up.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <ButtonLink href="/contact#quote" size="lg" variant="primary">
                 Request a Quote
-                <ArrowRightIcon className="h-5 w-5" />
+                <ArrowRightIcon className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
               </ButtonLink>
               <ButtonLink href="/services" size="lg" variant="onDark">
                 View Our Services

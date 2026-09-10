@@ -46,7 +46,7 @@ export function ProjectsShowcase({
             className="shrink-0 self-start lg:self-auto"
           >
             {ctaLabel}
-            <ArrowRightIcon className="h-4 w-4" />
+            <ArrowRightIcon className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
           </ButtonLink>
         ) : null}
       </div>

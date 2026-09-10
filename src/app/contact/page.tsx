@@ -15,7 +15,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = pageMetadata({
   title: "Contact & Request a Quote",
   description:
-    "Get in touch with Needham's Construction for tiling, plumbing, masonry, electrical or general construction work in Jamaica. Request a quote online.",
+    "Get in touch with Needham's Construction for tiling, plumbing, masonry or general construction work in Jamaica. Request a quote online.",
   path: "/contact",
 });
 

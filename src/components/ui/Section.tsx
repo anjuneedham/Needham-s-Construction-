@@ -34,7 +34,7 @@ export function Section({
       id={id}
       aria-labelledby={labelledBy}
       className={cn(
-        "scroll-mt-24 py-16 sm:py-20 lg:py-24",
+        "scroll-mt-24 py-20 sm:py-24 lg:py-28",
         toneClasses[tone],
         className,
       )}

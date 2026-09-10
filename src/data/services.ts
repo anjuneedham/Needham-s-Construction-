@@ -274,105 +274,6 @@ export const services: Service[] = [
     },
   },
 
-  /* --------------------------------------------------------- electrical */
-  {
-    slug: "electrical",
-    name: "Electrical",
-    icon: "electrical",
-    summary:
-      "Wiring, lighting, fixtures and repairs — planned properly, run neatly and tested before it's signed off.",
-    heroHeadline: "Electrical work done carefully",
-    heroSubline:
-      "Installation, wiring, lighting and repairs for homes and businesses in Jamaica — planned before it's run, and tested before it's closed up.",
-    overview: [
-      "Electrical work is not the place to cut corners. We plan circuits and runs before anything is chased into a wall, use the right cable and protection for the load, and test the work before it goes live.",
-      "That covers new installations and rewiring, lighting, outlets and fixtures, and fault-finding on systems that trip, flicker or have been added to over the years without a plan.",
-    ],
-    categories: [
-      {
-        title: "Electrical installation",
-        description:
-          "New circuits and installations for renovations, extensions and new build work.",
-      },
-      {
-        title: "Repairs",
-        description:
-          "Fault-finding on tripping breakers, dead circuits, flickering lights and damaged wiring.",
-      },
-      {
-        title: "Lighting",
-        description:
-          "Interior, exterior and security lighting — supplied, positioned and installed.",
-      },
-      {
-        title: "Wiring",
-        description:
-          "New wiring and rewiring, run neatly and protected correctly.",
-      },
-      {
-        title: "Fixtures",
-        description:
-          "Outlets, switches, fans, and appliance connections fitted and tested.",
-      },
-      {
-        title: "General electrical work",
-        description:
-          "Additions, relocations and tidying up installations that have grown piece by piece.",
-      },
-    ],
-    process: [
-      {
-        title: "Assess and plan",
-        description:
-          "We look at the existing installation and the load you need, then plan the circuits and routes.",
-      },
-      {
-        title: "Quote and scope",
-        description:
-          "A written quote covering the work, the materials and the fixtures involved.",
-      },
-      {
-        title: "Install",
-        description:
-          "Cable runs, boxes and terminations are carried out neatly, with the work sequenced around the other trades.",
-      },
-      {
-        title: "Test",
-        description:
-          "Circuits are checked and tested before they are energised and before anything is closed up.",
-      },
-      {
-        title: "Hand-over",
-        description:
-          "We walk you through what was installed, what's on which circuit, and leave the area clean.",
-      },
-    ],
-    notes: {
-      title: "Safety and quality",
-      intro:
-        "How we approach electrical work on every job, large or small:",
-      points: [
-        "Circuits are planned for the actual load before any cable is run.",
-        "Cable, breakers and protection are matched to the circuit, not to what happens to be on the van.",
-        "Connections are made in accessible enclosures — no buried joints.",
-        "Everything is tested before it is energised and before walls are closed up.",
-        "We tell you when something existing is unsafe, even when it isn't part of the job you called us about.",
-      ],
-    },
-    images: [],
-    videos: [],
-    mediaSlots: [
-      { label: "Wiring or circuit installation", ratio: "4/3" },
-      { label: "Lighting installation", ratio: "4/3" },
-      { label: "Completed fixtures", ratio: "4/3" },
-    ],
-    seo: {
-      title: "Electrical Services in Jamaica",
-      description:
-        "Electrical installation, wiring, lighting, fixtures and repairs across Jamaica. Planned, installed and tested carefully by Needham's Construction.",
-    },
-  },
-
   /* ------------------------------------------------- general construction */
   {
     slug: "general-construction",
@@ -385,8 +286,8 @@ export const services: Service[] = [
     heroSubline:
       "Extensions, renovations, additions and repairs across Jamaica, with the trades coordinated so the job moves in the right order.",
     overview: [
-      "Larger jobs go wrong when the trades don't line up. Tiling starts before the plumbing is tested; the electrical gets chased in after the walls are finished. We keep the sequence right, so each stage is ready for the next.",
-      "Because we cover tiling, plumbing, masonry and electrical ourselves, a renovation can run through one point of contact instead of you coordinating separate contractors and chasing each of them.",
+      "Larger jobs go wrong when the trades don't line up. Tiling starts before the plumbing is tested, or masonry gets left unfinished after the walls are closed up. We keep the sequence right, so each stage is ready for the next.",
+      "Because we cover tiling, plumbing and masonry ourselves, a renovation can run through one point of contact instead of you coordinating separate contractors and chasing each of them.",
       "This page covers the broader work. If what you need isn't listed, ask — it's likely something we handle or can bring in.",
     ],
     categories: [

@@ -30,7 +30,7 @@ import {
 type Status = "idle" | "submitting" | "sent" | "handoff" | "error";
 
 const fieldBase =
-  "block w-full rounded-sm border bg-white px-4 text-base text-iron-900 placeholder:text-concrete-600 transition-colors focus:border-amber-600 focus:outline-none";
+  "block w-full rounded-sm border bg-white px-4 text-base text-iron-900 placeholder:text-concrete-600 transition-all focus:border-amber-600 focus:outline-none focus:ring-2 focus:ring-amber-400/40";
 
 export function QuoteForm({
   /** Pre-selects a service, e.g. when linked from the tiling page. */

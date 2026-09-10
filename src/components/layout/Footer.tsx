@@ -61,7 +61,7 @@ export function Footer() {
                 <li key={service.slug}>
                   <Link
                     href={`/services/${service.slug}`}
-                    className="text-sm text-concrete-300 transition-colors hover:text-amber-400"
+                    className="text-sm text-concrete-200 transition-colors hover:text-amber-400"
                   >
                     {service.name}
                   </Link>
@@ -83,7 +83,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-concrete-300 transition-colors hover:text-amber-400"
+                    className="text-sm text-concrete-200 transition-colors hover:text-amber-400"
                   >
                     {link.label}
                   </Link>

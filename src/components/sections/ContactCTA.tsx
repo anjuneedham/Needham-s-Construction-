@@ -79,7 +79,7 @@ export function ContactCTA({
                 className="w-full"
               >
                 {quoteLabel}
-                <ArrowRightIcon className="h-5 w-5" />
+                <ArrowRightIcon className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
               </ButtonLink>
             </div>
 

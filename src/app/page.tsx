@@ -43,7 +43,7 @@ export default function HomePage() {
           id="services-heading"
           eyebrow="What we do"
           title="Five services, one team"
-          description="Tiling, plumbing, masonry, electrical and general construction — handled in-house, so a job that touches more than one trade doesn't need more than one contractor."
+          description="Tiling, plumbing, masonry and general construction — handled in-house, so a job that touches more than one trade doesn't need more than one contractor."
         />
         <ServicesGrid services={services} className="mt-14" />
       </Section>

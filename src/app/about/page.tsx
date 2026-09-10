@@ -20,7 +20,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = pageMetadata({
   title: "About Us",
   description:
-    "Needham's Construction is a Jamaican construction and home-services company handling tiling, plumbing, masonry, electrical and general construction work.",
+    "Needham's Construction is a Jamaican construction and home-services company handling tiling, plumbing, masonry and general construction work.",
   path: "/about",
 });
 

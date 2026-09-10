@@ -106,7 +106,7 @@ export function PageHero({
                 {primaryCta ? (
                   <ButtonLink href={primaryCta.href} size="lg" variant="primary">
                     {primaryCta.label}
-                    <ArrowRightIcon className="h-5 w-5" />
+                    <ArrowRightIcon className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
                   </ButtonLink>
                 ) : null}
                 {secondaryCta ? (
