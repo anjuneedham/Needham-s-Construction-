@@ -7,10 +7,11 @@ import { FilterableProjects } from "@/components/projects/FilterableProjects";
 import { ContactCTA } from "@/components/sections/ContactCTA";
 import { VideoSection } from "@/components/media/VideoSection";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { allProjects } from "@/data/projects";
+import { allProjects, getFeaturedProjects } from "@/data/projects";
 import { services } from "@/data/services";
 import { pageMetadata } from "@/lib/seo";
 import { breadcrumbSchema } from "@/lib/schema";
+import { isPortraitVideo } from "@/lib/utils";
 import type { VideoAsset } from "@/types/content";
 
 export const metadata: Metadata = pageMetadata({
@@ -24,6 +25,7 @@ export default function ProjectsPage() {
   const projectVideos: VideoAsset[] = allProjects.flatMap(
     (project) => project.videos,
   );
+  const heroProject = getFeaturedProjects(1)[0];
 
   return (
     <>
@@ -36,6 +38,7 @@ export default function ProjectsPage() {
           { name: "Projects", href: "/projects" },
         ]}
         primaryCta={{ href: "/contact#quote", label: "Request a Quote" }}
+        image={heroProject?.images[0] ?? null}
         mediaLabel="Featured project"
       />
 
@@ -82,6 +85,7 @@ export default function ProjectsPage() {
         videos={projectVideos}
         emptyLabel="Project walkthrough"
         emptyMessage="Project videos will be published here as they're filmed."
+        ratio={isPortraitVideo(projectVideos) ? "9/16" : "16/9"}
       />
 
       <ContactCTA

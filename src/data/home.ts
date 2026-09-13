@@ -44,4 +44,29 @@ export const aboutImage: ImageAsset | null = {
  *   { provider: "youtube", src: "VIDEO_ID", title: "Bathroom re-tile walkthrough",
  *     description: "Kingston · March 2026", duration: "2:14" }
  */
-export const homeVideos: VideoAsset[] = [];
+export const homeVideos: VideoAsset[] = [
+  {
+    provider: "file",
+    src: "/media/projects/bathroom-marble-walkthrough.mp4",
+    title: "Marble bathroom walkthrough",
+    duration: "0:14",
+    poster: {
+      src: "/media/projects/bathroom-marble-walkthrough-poster.jpg",
+      alt: "Finished marble-tile shower with glass enclosure under a vaulted wood ceiling",
+      width: 478,
+      height: 850,
+    },
+  },
+  {
+    provider: "file",
+    src: "/media/projects/bathroom-mosaic-walkthrough.mp4",
+    title: "Mosaic tile bathroom walkthrough",
+    duration: "0:46",
+    poster: {
+      src: "/media/projects/bathroom-mosaic-walkthrough-poster.jpg",
+      alt: "Finished mosaic-tile shower and vanity with matte black fixtures",
+      width: 576,
+      height: 1024,
+    },
+  },
+];

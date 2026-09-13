@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { ImageIcon, VideoIcon } from "@/components/ui/Icons";
 
-export type MediaRatio = "16/9" | "4/3" | "3/2" | "1/1" | "3/4";
+export type MediaRatio = "16/9" | "4/3" | "3/2" | "1/1" | "3/4" | "9/16";
 
 export const ratioClasses: Record<MediaRatio, string> = {
   "16/9": "aspect-video",
@@ -9,6 +9,7 @@ export const ratioClasses: Record<MediaRatio, string> = {
   "3/2": "aspect-3/2",
   "1/1": "aspect-square",
   "3/4": "aspect-3/4",
+  "9/16": "aspect-9/16",
 };
 
 /**

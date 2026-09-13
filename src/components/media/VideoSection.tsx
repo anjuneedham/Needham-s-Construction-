@@ -3,7 +3,7 @@ import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ButtonLink } from "@/components/ui/Button";
 import type { VideoAsset } from "@/types/content";
-import { MediaFrame } from "./MediaFrame";
+import { MediaFrame, type MediaRatio } from "./MediaFrame";
 import { VideoCard } from "./VideoCard";
 
 /**
@@ -24,6 +24,7 @@ export function VideoSection({
   tone = "dark",
   ctaHref,
   ctaLabel,
+  ratio = "16/9",
 }: {
   id?: string;
   eyebrow?: string;
@@ -35,6 +36,8 @@ export function VideoSection({
   tone?: "light" | "dark";
   ctaHref?: string;
   ctaLabel?: string;
+  /** Set when the videos are portrait phone footage, so they aren't cropped into a sliver by a 16:9 box. */
+  ratio?: MediaRatio;
 }) {
   const dark = tone === "dark";
   const headingId = id ? `${id}-heading` : undefined;
@@ -75,7 +78,7 @@ export function VideoSection({
                 key={`${video.provider}-${video.src}`}
                 video={video}
                 tone={dark ? "dark" : "light"}
-                ratio={videos.length === 1 ? "16/9" : "16/9"}
+                ratio={ratio}
               />
             ))}
           </div>

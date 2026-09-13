@@ -16,7 +16,7 @@ import { CheckIcon } from "@/components/ui/Icons";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getService, services } from "@/data/services";
 import { getProjectsByCategory } from "@/data/projects";
-import { article } from "@/lib/utils";
+import { article, isPortraitVideo } from "@/lib/utils";
 import { pageMetadata } from "@/lib/seo";
 import { breadcrumbSchema, serviceSchema } from "@/lib/schema";
 
@@ -58,6 +58,7 @@ export default async function ServicePage({ params }: PageProps) {
   const projects = getProjectsByCategory(service.slug);
   const galleryImages = service.images.slice(1);
   const slots = service.mediaSlots;
+  const videoRatio = isPortraitVideo(service.videos) ? "9/16" : "16/9";
 
   return (
     <>
@@ -203,6 +204,7 @@ export default async function ServicePage({ params }: PageProps) {
         videos={service.videos}
         emptyLabel={`${service.name} walkthrough`}
         emptyMessage={`Video of our ${service.name.toLowerCase()} work will be published here.`}
+        ratio={videoRatio}
       />
 
       <ContactCTA

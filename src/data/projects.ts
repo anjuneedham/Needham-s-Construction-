@@ -286,6 +286,176 @@ export const projects: Project[] = [
     date: "2025-07-25",
     featured: false,
   },
+  {
+    slug: "masonry-concrete-steps-formwork",
+    title: "Concrete steps built from formwork to finish",
+    category: "masonry",
+    location: "Jamaica",
+    description:
+      "A run of concrete steps built up the side of a home, shown from the timber and rebar formwork through to the finished, rendered stairway, with a matching plastered eave detail on the same property.",
+    images: [
+      {
+        src: "/media/projects/masonry-steps-formwork.jpg",
+        alt: "Timber formwork and rebar for a run of concrete steps, photographed at night",
+        width: 1200,
+        height: 1600,
+      },
+      {
+        src: "/media/projects/masonry-steps-finished.jpg",
+        alt: "Finished concrete steps rendered and painted, leading up the side of a house",
+        width: 1200,
+        height: 1600,
+      },
+      {
+        src: "/media/projects/masonry-eave-finish.jpg",
+        alt: "Plastered and painted eave detail on the same property",
+        width: 1200,
+        height: 1600,
+      },
+    ],
+    videos: [],
+    beforeAfter: [],
+    date: "2026-09-13",
+    featured: true,
+  },
+  {
+    slug: "masonry-column-capital",
+    title: "Decorative column capital and arch formwork",
+    category: "masonry",
+    location: "Jamaica",
+    description:
+      "A classical-style decorative capital and matching arch, cast and formed on site ahead of the concrete pour.",
+    images: [
+      {
+        src: "/media/projects/masonry-column-capital.jpg",
+        alt: "Decorative concrete column capital with a timber arch form overhead",
+        width: 1280,
+        height: 960,
+      },
+    ],
+    videos: [],
+    beforeAfter: [],
+    date: "2026-09-13",
+    featured: false,
+  },
+  {
+    slug: "construction-roof-rebuild",
+    title: "Roof rebuild: framing to finished standing-seam metal",
+    category: "general-construction",
+    location: "Jamaica",
+    description:
+      "A multi-hip roof rebuilt from timber framing and plywood sheathing through to a finished dark standing-seam metal roof with a glazed cupola and weathervane.",
+    images: [
+      {
+        src: "/media/projects/construction-roof-framing-dusk.jpg",
+        alt: "Roof framing and plywood sheathing on a multi-hip roof, photographed at dusk",
+        width: 1600,
+        height: 1200,
+      },
+      {
+        src: "/media/projects/construction-roof-trusses.jpg",
+        alt: "Close-up of roof trusses and sheathing mid-installation",
+        width: 1600,
+        height: 1200,
+      },
+      {
+        src: "/media/projects/construction-roof-finished.jpg",
+        alt: "Finished dark standing-seam metal roof with a glazed cupola and weathervane",
+        width: 1195,
+        height: 896,
+      },
+    ],
+    videos: [],
+    beforeAfter: [],
+    date: "2026-09-13",
+    featured: true,
+  },
+  {
+    slug: "construction-yellow-turret",
+    title: "Octagonal turret addition",
+    category: "general-construction",
+    location: "Jamaica",
+    description:
+      "An octagonal turret and balcony addition, finished and painted, added to an existing two-storey home.",
+    images: [
+      {
+        src: "/media/projects/construction-yellow-turret.jpg",
+        alt: "Finished octagonal turret and balcony addition, painted yellow, on a two-storey home",
+        width: 1280,
+        height: 960,
+      },
+    ],
+    videos: [],
+    beforeAfter: [],
+    date: "2026-09-13",
+    featured: false,
+  },
+  {
+    slug: "tiling-bathroom-marble-walkthrough",
+    title: "Marble bathroom walkthrough",
+    category: "tiling",
+    location: "Jamaica",
+    description:
+      "A full walkthrough of a finished marble-look tiled bathroom, including the glass-enclosed shower, vaulted wood ceiling and floating vanity.",
+    images: [
+      {
+        src: "/media/projects/bathroom-marble-walkthrough-poster.jpg",
+        alt: "Finished marble-tile shower with glass enclosure under a vaulted wood ceiling",
+        width: 478,
+        height: 850,
+      },
+    ],
+    videos: [
+      {
+        provider: "file",
+        src: "/media/projects/bathroom-marble-walkthrough.mp4",
+        title: "Marble bathroom walkthrough",
+        duration: "0:14",
+        poster: {
+          src: "/media/projects/bathroom-marble-walkthrough-poster.jpg",
+          alt: "Finished marble-tile shower with glass enclosure under a vaulted wood ceiling",
+          width: 478,
+          height: 850,
+        },
+      },
+    ],
+    beforeAfter: [],
+    date: "2026-09-11",
+    featured: true,
+  },
+  {
+    slug: "tiling-bathroom-mosaic-walkthrough",
+    title: "Mosaic tile bathroom walkthrough",
+    category: "tiling",
+    location: "Jamaica",
+    description:
+      "A full walkthrough of a finished mosaic-tile bathroom with a walk-in shower, floating vanity and matte black fixtures.",
+    images: [
+      {
+        src: "/media/projects/bathroom-mosaic-walkthrough-poster.jpg",
+        alt: "Finished mosaic-tile shower and vanity with matte black fixtures",
+        width: 576,
+        height: 1024,
+      },
+    ],
+    videos: [
+      {
+        provider: "file",
+        src: "/media/projects/bathroom-mosaic-walkthrough.mp4",
+        title: "Mosaic tile bathroom walkthrough",
+        duration: "0:46",
+        poster: {
+          src: "/media/projects/bathroom-mosaic-walkthrough-poster.jpg",
+          alt: "Finished mosaic-tile shower and vanity with matte black fixtures",
+          width: 576,
+          height: 1024,
+        },
+      },
+    ],
+    beforeAfter: [],
+    date: "2026-09-11",
+    featured: false,
+  },
 ];
 
 /** Projects shown on the home page, newest first. */

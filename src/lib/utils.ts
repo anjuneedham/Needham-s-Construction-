@@ -1,5 +1,17 @@
+import type { VideoAsset } from "@/types/content";
+
 export function cn(...classes: Array<string | false | null | undefined>): string {
   return classes.filter(Boolean).join(" ");
+}
+
+/**
+ * True when the first video's poster is taller than it is wide — i.e. phone
+ * footage shot in portrait. Used to pick a display ratio that doesn't crop
+ * the video down to a thin horizontal sliver inside a 16:9 box.
+ */
+export function isPortraitVideo(videos: VideoAsset[]): boolean {
+  const poster = videos[0]?.poster;
+  return Boolean(poster?.width && poster?.height && poster.height > poster.width);
 }
 
 /** "2026-04-18" → "18 April 2026". Returns the raw value if it isn't a date. */

@@ -136,7 +136,32 @@ export const services: Service[] = [
         height: 1599,
       },
     ],
-    videos: [],
+    videos: [
+      {
+        provider: "file",
+        src: "/media/projects/bathroom-marble-walkthrough.mp4",
+        title: "Marble bathroom walkthrough",
+        duration: "0:14",
+        poster: {
+          src: "/media/projects/bathroom-marble-walkthrough-poster.jpg",
+          alt: "Finished marble-tile shower with glass enclosure under a vaulted wood ceiling",
+          width: 478,
+          height: 850,
+        },
+      },
+      {
+        provider: "file",
+        src: "/media/projects/bathroom-mosaic-walkthrough.mp4",
+        title: "Mosaic tile bathroom walkthrough",
+        duration: "0:46",
+        poster: {
+          src: "/media/projects/bathroom-mosaic-walkthrough-poster.jpg",
+          alt: "Finished mosaic-tile shower and vanity with matte black fixtures",
+          width: 576,
+          height: 1024,
+        },
+      },
+    ],
     mediaSlots: [
       { label: "Completed floor tiling", ratio: "4/3" },
       { label: "Bathroom or shower tiling", ratio: "4/3" },
@@ -341,6 +366,18 @@ export const services: Service[] = [
         width: 1600,
         height: 1200,
       },
+      {
+        src: "/media/projects/masonry-steps-formwork.jpg",
+        alt: "Timber formwork and rebar for a run of concrete steps, photographed at night",
+        width: 1200,
+        height: 1600,
+      },
+      {
+        src: "/media/projects/masonry-column-capital.jpg",
+        alt: "Decorative concrete column capital with a timber arch form overhead",
+        width: 1280,
+        height: 960,
+      },
     ],
     videos: [],
     mediaSlots: [
@@ -432,16 +469,28 @@ export const services: Service[] = [
     ],
     images: [
       {
-        src: "/media/projects/pool-construction-shell.jpg",
-        alt: "Poured concrete pool structure under construction before finishing",
-        width: 1599,
-        height: 899,
+        src: "/media/projects/construction-roof-finished.jpg",
+        alt: "Finished dark standing-seam metal roof with a glazed cupola and weathervane",
+        width: 1195,
+        height: 896,
       },
       {
-        src: "/media/projects/pool-tiling-progress.jpg",
-        alt: "Mosaic tiling being installed on a pool mid-build",
+        src: "/media/projects/construction-roof-framing-dusk.jpg",
+        alt: "Roof framing and plywood sheathing on a multi-hip roof, photographed at dusk",
+        width: 1600,
+        height: 1200,
+      },
+      {
+        src: "/media/projects/construction-yellow-turret.jpg",
+        alt: "Finished octagonal turret and balcony addition, painted yellow, on a two-storey home",
         width: 1280,
-        height: 720,
+        height: 960,
+      },
+      {
+        src: "/media/projects/masonry-steps-finished.jpg",
+        alt: "Finished concrete steps rendered and painted, leading up the side of a house",
+        width: 1200,
+        height: 1600,
       },
     ],
     videos: [],

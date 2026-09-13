@@ -15,6 +15,7 @@ import { services } from "@/data/services";
 import { getFeaturedProjects } from "@/data/projects";
 import { site, siteUrl } from "@/data/site";
 import { aboutImage, heroImage, heroVideo, homeVideos } from "@/data/home";
+import { isPortraitVideo } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: {
@@ -72,6 +73,7 @@ export default function HomePage() {
         emptyMessage="Our first project videos will appear here. We film work in progress and finished jobs rather than using stock footage."
         ctaHref="/projects"
         ctaLabel="View projects"
+        ratio={isPortraitVideo(homeVideos) ? "9/16" : "16/9"}
       />
 
       <AboutIntro image={aboutImage} />
