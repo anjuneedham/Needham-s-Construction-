@@ -75,7 +75,7 @@ export const company = {
   certifications: [] as string[],
 
   /** OPTIONAL — path to a logo file you drop into /public, e.g. "/media/company/logo.svg". */
-  logo: "",
+  logo: "/media/company/logo.png",
 };
 
 export type Company = typeof company;

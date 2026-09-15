@@ -59,10 +59,10 @@ export function Logo({
         <Image
           src={company.logo}
           alt={company.name}
-          width={160}
-          height={40}
+          width={600}
+          height={600}
           priority
-          className="h-9 w-auto sm:h-10"
+          className="h-11 w-11 shrink-0 rounded-md transition-transform duration-200 group-hover:scale-105 sm:h-12 sm:w-12"
         />
       ) : (
         <>
