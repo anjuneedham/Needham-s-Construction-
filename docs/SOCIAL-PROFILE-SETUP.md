@@ -62,7 +62,7 @@ photo on it is worse than a plain one.
 
 ```
 Needham's Construction 🇯🇲
-Tiling · Plumbing · Masonry · Electrical · General Construction
+Tiling · Plumbing · Masonry · General Construction
 Free quotes across Jamaica
 📞 [PHONE]
 ```
@@ -75,7 +75,7 @@ connected.
 
 ```
 Construction & home services in Jamaica 🇯🇲
-Tiling · Plumbing · Masonry · Electrical
+Tiling · Plumbing · Masonry · General Construction
 ```
 
 Link: `https://needhamsconstruction.com`
@@ -92,8 +92,8 @@ construction. Request a free quote.
 
 ```
 Needham's Construction is a Jamaican construction and home-services company.
-We take on tiling, plumbing, masonry, electrical and general construction work
-for homeowners, businesses and property owners across the island.
+We take on tiling, plumbing, masonry and general construction work for
+homeowners, businesses and property owners across the island.
 
 Our approach is straightforward. We look at the job properly before we quote,
 explain clearly what the work involves, and agree the scope before anything
@@ -104,7 +104,6 @@ SERVICES
 • Tiling — floor, wall, bathroom, kitchen and outdoor tiling, and repairs
 • Plumbing — installation, repairs, fixtures and water systems
 • Masonry — block work, concrete, walls, foundations and repairs
-• Electrical — installation, wiring, lighting, fixtures and repairs
 • General Construction — renovations, extensions, additions and finishing work
 
 Request a quote: https://needhamsconstruction.com/contact
@@ -127,7 +126,7 @@ Add these to every platform, and keep them identical to
 - Email, if you publish one
 - Opening hours, once they're settled
 
-Facebook only: fill in **Services** — add all five as separate entries with the
+Facebook only: fill in **Services** — add all four as separate entries with the
 same descriptions used on the website. They show in Facebook search.
 
 ---

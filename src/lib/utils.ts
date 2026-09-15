@@ -5,13 +5,20 @@ export function cn(...classes: Array<string | false | null | undefined>): string
 }
 
 /**
- * True when the first video's poster is taller than it is wide — i.e. phone
- * footage shot in portrait. Used to pick a display ratio that doesn't crop
- * the video down to a thin horizontal sliver inside a 16:9 box.
+ * True when any video in the list has a poster taller than it is wide — i.e.
+ * phone footage shot in portrait. Used to pick a display ratio that doesn't
+ * crop the video down to a thin horizontal sliver inside a 16:9 box.
+ *
+ * Checks the whole list, not just the first entry: a link-out card (TikTok,
+ * Instagram, Facebook) has no poster dimensions of its own, so if it happens
+ * to lead the array it must not silently mask a real portrait video sitting
+ * right behind it.
  */
 export function isPortraitVideo(videos: VideoAsset[]): boolean {
-  const poster = videos[0]?.poster;
-  return Boolean(poster?.width && poster?.height && poster.height > poster.width);
+  return videos.some((video) => {
+    const poster = video.poster;
+    return Boolean(poster?.width && poster?.height && poster.height > poster.width);
+  });
 }
 
 /** "2026-04-18" → "18 April 2026". Returns the raw value if it isn't a date. */

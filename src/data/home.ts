@@ -46,6 +46,11 @@ export const aboutImage: ImageAsset | null = {
  */
 export const homeVideos: VideoAsset[] = [
   {
+    provider: "tiktok",
+    src: "https://vt.tiktok.com/ZSq4neW3m/",
+    title: "Needham's Construction on TikTok",
+  },
+  {
     provider: "file",
     src: "/media/projects/bathroom-marble-walkthrough.mp4",
     title: "Marble bathroom walkthrough",
