@@ -1,6 +1,6 @@
 "use client";
 
-import { useId, useState } from "react";
+import { useEffect, useId, useState } from "react";
 
 import { cn } from "@/lib/utils";
 import { Button, ButtonLink } from "@/components/ui/Button";
@@ -46,6 +46,21 @@ export function QuoteForm({
   const [errors, setErrors] = useState<QuoteErrors>({});
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const [handoffBody, setHandoffBody] = useState("");
+
+  // For now, submissions with no delivery provider configured go straight to
+  // WhatsApp: the moment the confirmation shows, we open it automatically
+  // with the request already filled in. WhatsApp itself still requires a
+  // human to tap Send inside the app — no website can skip that step — so
+  // the button stays as a fallback (popup/redirect blockers, or the visitor
+  // closed WhatsApp before sending).
+  useEffect(() => {
+    if (status !== "handoff" || !hasWhatsApp || !handoffBody) return;
+    const timer = setTimeout(() => {
+      window.location.href = whatsappHref(handoffBody);
+    }, 900);
+    return () => clearTimeout(timer);
+  }, [status, handoffBody]);
 
   const fieldId = (name: string) => `${formId}-${name}`;
   const errorId = (name: string) => `${formId}-${name}-error`;
@@ -100,6 +115,7 @@ export function QuoteForm({
 
       // No delivery provider connected yet — hand the request off to a
       // direct channel instead of pretending it was sent.
+      setHandoffBody(formatQuoteRequest(values));
       setStatus("handoff");
     } catch {
       setStatus("error");
@@ -121,27 +137,32 @@ export function QuoteForm({
   }
 
   if (status === "handoff") {
-    const body = formatQuoteRequest(values);
     return (
       <ConfirmationPanel
         title="Your request is ready to send."
         message={
-          hasWhatsApp || hasEmail
-            ? "Send it through to us with one tap — the details you entered are already filled in."
-            : "Our direct contact channels are being published shortly. Copy the summary below and keep it to hand — it has everything we need to quote the job."
+          hasWhatsApp
+            ? "We're opening WhatsApp for you now with the details already filled in — just hit send. If it doesn't open automatically, use the button below."
+            : hasEmail
+              ? "Send it through to us with one tap — the details you entered are already filled in."
+              : "Our direct contact channels are being published shortly. Copy the summary below and keep it to hand — it has everything we need to quote the job."
         }
       >
         {hasWhatsApp || hasEmail ? (
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             {hasWhatsApp ? (
-              <ButtonLink href={whatsappHref(body)} size="lg" variant="primary">
+              <ButtonLink
+                href={whatsappHref(handoffBody)}
+                size="lg"
+                variant="primary"
+              >
                 <WhatsAppIcon className="h-5 w-5" />
                 Send on WhatsApp
               </ButtonLink>
             ) : null}
             {hasEmail ? (
               <ButtonLink
-                href={mailtoHref(quoteEmailSubject, body)}
+                href={mailtoHref(quoteEmailSubject, handoffBody)}
                 size="lg"
                 variant={hasWhatsApp ? "outline" : "primary"}
               >
@@ -157,7 +178,7 @@ export function QuoteForm({
             Show the details you entered
           </summary>
           <pre className="mt-3 overflow-x-auto rounded-sm bg-concrete-100 p-4 text-sm whitespace-pre-wrap text-iron-700">
-            {body}
+            {handoffBody}
           </pre>
         </details>
       </ConfirmationPanel>
